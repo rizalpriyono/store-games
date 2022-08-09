@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .link-text {
+    @apply after:content-[''] after:block after:w-full
+      after:h-px after:relative after:bottom-1 after:bg-sky-600;
+  }
+  .item-nav {
+    @apply mx-4 text-slate-400 font-light cursor-pointer hover:text-black transition-all;
+  }
+}
+
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
